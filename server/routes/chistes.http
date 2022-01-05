@@ -1,0 +1,31 @@
+###
+
+GET http://127.0.0.1:5100/api/chistes
+###
+
+POST http://127.0.0.1:5100/api/chistes/new
+Content-Type: application/json
+
+{
+    "setup": "Broma 3",
+    "punchline": "mal chiste"
+}
+
+###
+
+PATCH http://localhost:5100/api/chistes/update/
+Content-Type: application/json
+
+{
+    "setup": "Broma",
+    "punchline": "medio chiste 3"
+}
+
+###
+DELETE http://localhost:5100/api/chistes/delete/
+
+###
+
+GET http://localhost:5100/api/chistes/random
+
+###
